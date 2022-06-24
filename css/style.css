@@ -1,9 +1,41 @@
 /* GLOBAL */
 
-/* input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" */
-
 :root {
-  --main-color: #3f3f3f;
+  --main-color: #2bd0d0;
+  --black: #34313d;
+  --purple: #3a3054;
+  --light-purple: #4b3f6b;
+  --grey: #9e9aa8;
+  --light-grey: #eff1f7;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Bold.woff2") format("woff2"),
+    url("../font/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-MediumItalic.woff2") format("woff2"),
+    url("../font/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Medium.woff2") format("woff2"),
+    url("../font/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -28,12 +60,13 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  color: var(--grey);
+  font-family: "Poppins", "Arial", sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
 }
 
 a {
@@ -65,11 +98,46 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  color: #ffffff;
+  background-color: var(--main-color);
+  transition: opacity 0.3s ease;
+  font-weight: 700;
+}
+
+.btn-small {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 24px;
+  border-radius: 28px;
+}
+
+.btn-big {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 14px 40px;
+}
+
+.btn-rectangle {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 18px 40px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
 /* CONTAINER */
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1210px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
