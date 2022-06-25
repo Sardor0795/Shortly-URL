@@ -13,13 +13,13 @@
 <body>
     
     <header class="header">
-        <div class="container">
-            <img class="logo" src="./img/Shortly.svg" alt="Logo" width="120" height="32">
-            <nav class="nav">
+        <div class="header__container container">
+            <a class="logo" href="#"><img class="logo__img" src="./img/Shortly.svg" alt="Logo" width="124" height="32"></a>
+            <nav class="header__nav nav">
                 <ul class="nav__list">
-                    <li class="nav__item">Features</li>
-                    <li class="nav__item">Pricing</li>
-                    <li class="nav__item">Resources</li>
+                    <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Pricing</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Resources</a></li>
                 </ul>
             </nav>
             <div class="header__btns">
@@ -28,6 +28,49 @@
             </div>
         </div>
     </header>
+
+    <main class="main__content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner inner">
+                    <h1 class="inner__title">More than just shorter links</h1>
+                    <p class="inner__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                    <a href="#" class="btn btn-big">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shorten">
+            <div class="container">
+                <form class="input__form" action="https//:echo.htmlacademy.ru" method="post">
+                    <div class="input__box">
+                        <div class="input__wrapper">
+                            <input class="input" type="url" aria-label="Url link" placeholder="Shorten a link here..." required>
+                            <span class="error">Please add a link</span>
+                        </div>
+                        <button type="submit" class="btn btn-rectangle" href="#">Shorten It!</button>
+                    </div>
+                    <div class="result">
+                        <div class="result__links">
+                            <span class="result__link--old">https://www.frontendmentor.io</span>
+                            <a href="#" class="result__link--new">https://rel.ink/k4lKyk</a>
+                            <a class="btn btn-copy" href="#">Copy</a>
+                        </div>
+                        <div class="result__links">
+                            <span class="result__link--old">https://twitter.com/frontendmentor</span>
+                            <a href="#" class="result__link--new">https://rel.ink/gxOXp9</a>
+                            <a class="btn btn-copy" href="#">Copy</a>
+                        </div>
+                        <div class="result__links">
+                            <span class="result__link--old">https://www.linkedin.com/company/frontend-mentor</span>
+                            <a href="#" class="result__link--new">https://rel.ink/gob3X9</a>
+                            <a class="btn btn-copy" href="#">Copy</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
