@@ -523,6 +523,13 @@ select:-webkit-autofill:focus {
   font-size: 22px;
   line-height: 33px;
   color: var(--black);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* RETINA BG */
