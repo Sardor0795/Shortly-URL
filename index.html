@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <div class="header__container container">
-            <a class="logo" href="#"><img class="logo__img" src="./img/Shortly.svg" alt="Logo" width="124" height="32"></a>
+            <a class="logo" href="#"><img class="logo__img" src="./img/Shortly.svg" alt="Logo" width="124"
+                    height="32"></a>
             <nav class="header__nav nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
@@ -30,11 +33,15 @@
     </header>
 
     <main class="main__content">
+
+        <!-- HERO -->
+
         <section class="hero">
             <div class="container">
                 <div class="hero__inner inner">
                     <h1 class="inner__title">More than just shorter links</h1>
-                    <p class="inner__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                    <p class="inner__text">Build your brand’s recognition and get detailed insights on how your links
+                        are performing.</p>
                     <a href="#" class="btn btn-big">Get Started</a>
                 </div>
             </div>
@@ -42,37 +49,44 @@
 
         <section class="shorten">
             <div class="container">
+
+                <!-- SHORTENER -->
+
                 <form class="input__form js-input__form" action="https://echo.htmlacademy.ru" method="post">
                     <div class="input__box">
                         <div class="input__wrapper">
-                            <input class="input" name="url" type="url" aria-label="Url link" placeholder="Shorten a link here..." required>
+                            <input class="input" name="url" type="url" aria-label="Url link"
+                                placeholder="Shorten a link here..." required>
                             <span class="error">Please add a link</span>
                         </div>
-                        <button type="submit" class="btn btn-rectangle" href="#">Shorten It!</button>
+                        <button type="submit" class="btn btn-rectangle">Shorten It!</button>
                     </div>
                     <div class="result js-result">
                         <div class="result__links">
                             <span class="result__link--old">https://www.frontendmentor.io</span>
                             <a href="#" class="result__link--new">https://rel.ink/k4lKyk</a>
-                            <button class="btn btn-copy js-copy-btn" href="#">Copy</button>
+                            <button class="btn btn-copy js-copy-btn">Copy</button>
                         </div>
                         <div class="result__links">
                             <span class="result__link--old">https://twitter.com/frontendmentor</span>
                             <a href="#" class="result__link--new">https://rel.ink/gxOXp9</a>
-                            <button class="btn btn-copy js-copy-btn" href="#">Copy</button>
+                            <button class="btn btn-copy js-copy-btn">Copy</button>
                         </div>
                         <div class="result__links">
                             <span class="result__link--old">https://www.linkedin.com/company/frontend-mentor</span>
                             <a href="#" class="result__link--new">https://rel.ink/gob3X9</a>
-                            <button class="btn btn-copy js-copy-btn" href="#">Copy</button>
+                            <button class="btn btn-copy js-copy-btn">Copy</button>
                         </div>
                     </div>
                 </form>
 
+                <!-- STATISTICS -->
+
                 <div class="statistics">
                     <div class="statistics__info">
                         <h2 class="statistics__title">Advanced Statistics</h2>
-                        <p class="statistics__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                        <p class="statistics__text">Track how your links are performing across the web with our advanced
+                            statistics dashboard.</p>
                     </div>
                     <ul class="statistics__features">
                         <li class="statistics__feature feature">
@@ -80,26 +94,31 @@
                                 <img class="feature__icon" width="40" height="40" src="./img/icon-feature-1.svg" alt="">
                             </div>
                             <h3 class="feature__title">Brand Recognition</h3>
-                            <p class="feature__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                            <p class="feature__text">Boost your brand recognition with each click. Generic links don’t
+                                mean a thing. Branded links help instil confidence in your content.</p>
                         </li>
                         <li class="statistics__feature feature">
                             <div class="feature-icon__wrapper">
                                 <img class="feature__icon" width="40" height="40" src="./img/icon-feature-2.svg" alt="">
                             </div>
                             <h3 class="feature__title">Detailed Records</h3>
-                            <p class="feature__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                            <p class="feature__text">Gain insights into who is clicking your links. Knowing when and
+                                where people engage with your content helps inform better decisions.</p>
                         </li>
                         <li class="statistics__feature feature">
                             <div class="feature-icon__wrapper">
                                 <img class="feature__icon" width="40" height="40" src="./img/icon-feature-3.svg" alt="">
                             </div>
                             <h3 class="feature__title">Fully Customizable</h3>
-                            <p class="feature__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                            <p class="feature__text">Improve brand awareness and content discoverability through
+                                customizable links, supercharging audience engagement.</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <!-- CTA -->
 
         <section class="CTA">
             <div class="CTA__container container">
@@ -107,8 +126,64 @@
                 <a class="CTA__link btn btn-big" href="#">Get Started</a>
             </div>
         </section>
+
     </main>
 
+    <!-- SITE FOOTER -->
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <a class="footer__logo" href="#">
+                <svg width="121" height="33" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M35 25h5V11l-1-2-2-2h-2l-4 1-3 2V0h-5v25h5V15l1-2 1-1h4l1 3v10ZM16 7l1 1 2-5a28 28 0 0 0-4-1 19 19 0 0 0-5-1H7L4 3a7 7 0 0 0-2 6v2l1 2 2 1a20 20 0 0 0 4 1l2 1 1 1h1l1 1c0 2-1 2-3 2H8a19 19 0 0 1-4-2l-1-1-2 5 2 2a22 22 0 0 0 8 1h3l3-1a6 6 0 0 0 3-6l-1-3-1-2-3-1a29 29 0 0 0-3-2h-2L9 9H8L7 8c0-2 1-2 3-2h2a15 15 0 0 1 4 1Zm36 18h-4l-3-2-1-3a10 10 0 0 1 1-10l3-2 4-1 5 1 3 2 1 3a10 10 0 0 1-1 10l-3 2h-5Zm-2-6-1-3v-2l1-1a4 4 0 0 1 2-2c2 0 3 1 3 2l1 3v2l-1 1-1 1-2 1-2-2Zm26-7h-3l-3 2v11h-5V7h5v4l2-3 3-1h1v5Zm12 13 2-1-1-4h-3l-1-1v-8h4V7h-4V1h-5v6h-2v4h2v12a4 4 0 0 0 3 2h5Zm5-25h5v19l2 2a4 4 0 0 0 2-1v4l-2 1h-3l-3-1-1-3V0Zm12 28h-1v4a8 8 0 0 0 3 1 7 7 0 0 0 7-5l7-21h-6l-3 13-4-13h-6l7 18-1 2-2 1h-1Z" fill="currentColor"/></svg>
+            </a>
+
+            <div class="footer__links">
+                <div class="footer-links__wrapper">
+                    <h3 class="footer-links__title">Features</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item"><a class="footer__link" href="#">Link Shortening</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Branded Links</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links__wrapper">
+                    <h3 class="footer-links__title">Resources</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item"><a class="footer__link" href="#">Blog</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Developers</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links__wrapper">
+                    <h3 class="footer-links__title">Company</h3>
+                    <ul class="footer-links__list">
+                        <li class="footer-links__item"><a class="footer__link" href="#">About</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Our Team</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Careers</a></li>
+                        <li class="footer-links__item"><a class="footer__link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="footer-social__list">
+                <li class="footer-social__item"><a class="footer-social__link" href="#">
+                    <svg class="footer-social__img" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 0H1L0 1v22l1 1h12v-9h-3v-4h3V8c0-3 2-4 4-4h3v3h-2l-1 2v2h3v4h-3v9h6l1-1V1l-1-1Z" fill="currentColor"/></svg>
+                </a></li>
+                <li class="footer-social__item"><a class="footer-social__link" href="#">
+                    <svg class="footer-social__img" width="24" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 3h-3l2-2-3 1a5 5 0 0 0-8 4C8 6 4 4 2 1 0 3 1 6 3 8L1 7c0 2 2 5 4 5H3c0 2 2 3 4 4l-7 2 8 2c9 0 14-8 14-15l2-2Z" fill="currentColor"/></svg>
+                </a></li>
+                <li class="footer-social__item"><a class="footer-social__link" href="#">
+                    <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0a12 12 0 0 0-4 23v-3l1-6v-2c0-2 1-3 2-3l1 2-1 4 2 2c2 0 4-2 4-6 0-2-2-4-5-4s-5 2-5 5v2l1 1-1 1c-2 0-3-3-3-4 0-4 3-8 8-8 4 0 8 3 8 7 0 5-3 8-7 8l-2-2-1 3-2 3a12 12 0 1 0 4-23Z" fill="currentColor"/></svg>
+                </a></li>
+                <li class="footer-social__item"><a class="footer-social__link" href="#">
+                    <svg class="footer-social__img" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 0H7C3 0 0 3 0 7a84 84 0 0 0 0 10c0 4 3 7 7 7a86 86 0 0 0 10 0c4 0 7-3 7-7a84 84 0 0 0 0-10c0-4-3-7-7-7h-5Zm0 2h5c3 0 5 2 5 5a83 83 0 0 1 0 10c0 3-2 5-5 5a83 83 0 0 1-10 0c-3 0-5-2-5-5A83 83 0 0 1 2 7c0-3 2-5 5-5h5ZM6 12a6 6 0 1 1 12 0 6 6 0 0 1-12 0Zm6 4a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm5-10a1 1 0 1 1 3 0 1 1 0 0 1-3 0Z" fill="currentColor"/></svg>
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
+
 </body>
+
 </html>
