@@ -334,7 +334,7 @@ select:-webkit-autofill:focus {
   border-radius: 10px;
   padding: 52px 65px;
   background-color: var(--light-purple);
-  background-image: url("../img/shorten-bg.jpg");
+  background-image: url("../img/shorten-bg.svg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -525,11 +525,49 @@ select:-webkit-autofill:focus {
   color: var(--black);
   margin-top: 0;
   margin-bottom: 12px;
+  text-transform: capitalize;
 }
 
 .feature__text {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* CTA */
+
+.CTA {
+  background-image: url("../img/CTA-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.CTA__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CTA__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.CTA__link {
+}
+
+.btn {
+}
+
+.btn-big {
 }
 
 /* RETINA BG */
