@@ -42,29 +42,29 @@
 
         <section class="shorten">
             <div class="container">
-                <form class="input__form" action="https//:echo.htmlacademy.ru" method="post">
+                <form class="input__form js-input__form" action="https://echo.htmlacademy.ru" method="post">
                     <div class="input__box">
                         <div class="input__wrapper">
-                            <input class="input" type="url" aria-label="Url link" placeholder="Shorten a link here..." required>
+                            <input class="input" name="url" type="url" aria-label="Url link" placeholder="Shorten a link here..." required>
                             <span class="error">Please add a link</span>
                         </div>
                         <button type="submit" class="btn btn-rectangle" href="#">Shorten It!</button>
                     </div>
-                    <div class="result">
+                    <div class="result js-result">
                         <div class="result__links">
                             <span class="result__link--old">https://www.frontendmentor.io</span>
                             <a href="#" class="result__link--new">https://rel.ink/k4lKyk</a>
-                            <a class="btn btn-copy" href="#">Copy</a>
+                            <a class="btn btn-copy js-copy-btn" href="#">Copy</a>
                         </div>
                         <div class="result__links">
                             <span class="result__link--old">https://twitter.com/frontendmentor</span>
                             <a href="#" class="result__link--new">https://rel.ink/gxOXp9</a>
-                            <a class="btn btn-copy" href="#">Copy</a>
+                            <a class="btn btn-copy js-copy-btn" href="#">Copy</a>
                         </div>
                         <div class="result__links">
                             <span class="result__link--old">https://www.linkedin.com/company/frontend-mentor</span>
                             <a href="#" class="result__link--new">https://rel.ink/gob3X9</a>
-                            <a class="btn btn-copy" href="#">Copy</a>
+                            <a class="btn btn-copy js-copy-btn" href="#">Copy</a>
                         </div>
                     </div>
                 </form>
