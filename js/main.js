@@ -14,6 +14,11 @@ if (elJsResult) {
     if (e.target.matches(".js-copy-btn")) {
       e.target.textContent = "Copied";
       e.target.classList.add("btn-copied");
+
+      navigator.clipboard.writeText(
+        e.target.previousElementSibling.textContent
+      );
+
       setTimeout(function () {
         e.target.textContent = "Copy";
         e.target.classList.remove("btn-copied");

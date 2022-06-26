@@ -129,10 +129,6 @@ button {
   transition: background-color 0.2s ease;
 }
 
-.btn-copy:hover {
-  background-color: #9ae3e3;
-}
-
 .btn-copy:focus {
   outline: unset;
 }
@@ -322,13 +318,14 @@ select:-webkit-autofill:focus {
 
 .shorten {
   background-color: var(--light-grey);
-  padding-top: 204px;
   padding-bottom: 120px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .input__form {
-  margin-top: -295px;
+  margin-top: -90px;
+  margin-bottom: 120px;
 }
 
 .input__box {
@@ -434,6 +431,80 @@ select:-webkit-autofill:focus {
 
 .result__link--new:active {
   opacity: 0.6;
+}
+
+/* STATISTICS */
+
+.statistics {
+}
+
+.statistics__info {
+  max-width: 540px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+
+.statistics__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: var(--black);
+  margin-bottom: 18px;
+}
+
+.statistics__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.122727px;
+  color: var(--grey);
+}
+
+/* FEATURES */
+
+.statistics__features {
+  display: flex;
+}
+
+.statistics__feature:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature {
+  max-width: 350px;
+  background-color: #fff;
+  padding: 77px 32px 41px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.feature-icon__wrapper {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 32px;
+  top: -44px;
+}
+
+.feature__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.feature__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--black);
 }
 
 /* RETINA BG */
