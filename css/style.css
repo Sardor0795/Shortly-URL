@@ -414,6 +414,8 @@ select:-webkit-autofill:focus {
   letter-spacing: 0.15px;
   color: var(--black);
   flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .result__link--new {
