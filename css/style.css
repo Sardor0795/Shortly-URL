@@ -416,6 +416,7 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
   white-space: nowrap;
   text-overflow: ellipsis;
+  max-width: 50%;
 }
 
 .result__link--new {
