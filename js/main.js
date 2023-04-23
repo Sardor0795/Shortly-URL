@@ -28,6 +28,10 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  window.addEventListener("scroll", () => {
+    elScrollUpBtn.classList.toggle("active", window.scrollY > 400);
+  });
+
   if (elScrollUpBtn) {
     elScrollUpBtn.addEventListener("click", () => {
       window.scroll(0, 0);
