@@ -663,6 +663,18 @@ select:-webkit-autofill:focus {
   width: 24px;
   height: 24px;
 }
+
+.scrollUpBtn {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  z-index: 900;
+}
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
