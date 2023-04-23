@@ -690,6 +690,19 @@ select:-webkit-autofill:focus {
   transform: translateY(-2px);
 }
 
+/* Reveal animation */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* RETINA BG */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
