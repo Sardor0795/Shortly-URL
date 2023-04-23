@@ -2,6 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const elJsInputForm = document.querySelector(".js-input__form");
   const elJsResult = document.querySelector(".js-result");
   const elScrollUpBtn = document.querySelector(".scrollUpBtn");
+  const elsReveal = document.querySelectorAll(".reveal");
 
   if (elJsInputForm) {
     elJsInputForm.addEventListener("submit", function (e) {
@@ -37,4 +38,14 @@ window.addEventListener("DOMContentLoaded", () => {
       window.scroll(0, 0);
     });
   }
+
+  window.addEventListener("scroll", () => {
+    elsReveal.forEach((v) => {
+      let revealHeight = 50;
+      let windowHeight = window.innerHeight;
+      let elTopRect = v.getBoundingClientRect().top;
+
+      v.classList.toggle("active", elTopRect < windowHeight - revealHeight);
+    });
+  });
 });
