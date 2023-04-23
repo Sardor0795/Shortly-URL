@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
   const elJsInputForm = document.querySelector(".js-input__form");
   const elJsResult = document.querySelector(".js-result");
-  const elBtnCopy = document.querySelector(".js-copy-btn");
+  const elScrollUpBtn = document.querySelector(".scrollUpBtn");
 
   if (elJsInputForm) {
     elJsInputForm.addEventListener("submit", function (e) {
@@ -25,6 +25,12 @@ window.addEventListener("DOMContentLoaded", () => {
           e.target.classList.remove("btn-copied");
         }, 1000);
       }
+    });
+  }
+
+  if (elScrollUpBtn) {
+    elScrollUpBtn.addEventListener("click", () => {
+      window.scroll(0, 0);
     });
   }
 });
